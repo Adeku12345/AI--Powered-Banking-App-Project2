@@ -1,0 +1,11 @@
+import random
+import mysql.connector
+from flask import Flask, request, jsonify
+from flask_bcrypt import Bcrypt # type: ignore
+import tkinter as tk
+from tkinter import messagebox
+import mysql.connector
+pandas
+numpy
+seaborn
+-e .
