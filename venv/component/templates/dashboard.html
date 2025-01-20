@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Management Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Banking Management Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard">Home</a></li>
+                    <li><a href="/accounts">Accounts</a></li>
+                    <li><a href="/loans">Loans</a></li>
+                    <li><a href="/investments">Investments</a></li>
+                    <li><a href="/crypto">Crypto</a></li>
+                    <li><a href="/cards">Cards</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard-overview">
+            <div class="container">
+                <h2>Welcome, [User Name]</h2>
+                <p>Your last login: [Last Login Time]</p>
+                <div class="overview-cards">
+                    <div class="card">
+                        <h3>Total Balance</h3>
+                        <p>$[Total Balance]</p>
+                    </div>
+                    <div class="card">
+                        <h3>Active Loans</h3>
+                        <p>$[Loan Balance]</p>
+                    </div>
+                    <div class="card">
+                        <h3>Investments</h3>
+                        <p>$[Investment Balance]</p>
+                    </div>
+                    <div class="card">
+                        <h3>Crypto Portfolio</h3>
+                        <p>$[Crypto Balance]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <div class="container">
+                <h2>Quick Actions</h2>
+                <div class="actions">
+                    <a href="/deposit" class="action-btn">Deposit</a>
+                    <a href="/withdraw" class="action-btn">Withdraw</a>
+                    <a href="/transfer" class="action-btn">Transfer</a>
+                    <a href="/apply-loan" class="action-btn">Apply for Loan</a>
+                    <a href="/buy-crypto" class="action-btn">Buy Crypto</a>
+                    <a href="/view-cards" class="action-btn">Manage Cards</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="transaction-history">
+            <div class="container">
+                <h2>Recent Transactions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Date]</td>
+                            <td>[Description]</td>
+                            <td>$[Amount]</td>
+                            <td>[Type]</td>
+                        </tr>
+                        <!-- Repeat for more transactions -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Banking Management App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

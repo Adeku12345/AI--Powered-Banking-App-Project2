@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans - Banking Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="loans.html" class="active">Loans</a></li>
+                <li><a href="card_payment.html">Card Payments</a></li>
+                <li><a href="investments.html">Investments</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="loan-section">
+            <h1>Loans</h1>
+            <p>Apply for a loan that suits your needs.</p>
+
+            <form id="loan-application-form" action="/submit_loan" method="post">
+                <div class="form-group">
+                    <label for="loanType">Loan Type:</label>
+                    <select id="loanType" name="loanType" required>
+                        <option value="personal">Personal Loan</option>
+                        <option value="home">Home Loan</option>
+                        <option value="auto">Auto Loan</option>
+                        <option value="education">Education Loan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="loanAmount">Loan Amount:</label>
+                    <input type="number" id="loanAmount" name="loanAmount" min="1000" placeholder="Enter amount in USD" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="repaymentPeriod">Repayment Period (in years):</label>
+                    <input type="number" id="repaymentPeriod" name="repaymentPeriod" min="1" max="30" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="monthlyIncome">Monthly Income:</label>
+                    <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="Enter your monthly income" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="creditScore">Credit Score:</label>
+                    <input type="number" id="creditScore" name="creditScore" min="300" max="850" placeholder="Enter your credit score" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Purpose of Loan:</label>
+                    <textarea id="purpose" name="purpose" rows="4" placeholder="Describe the purpose of the loan" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Apply Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Banking Management System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Management - Banking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="savings.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Savings Account Management</h1>
+        <p>Track your savings and achieve your financial goals.</p>
+    </header>
+
+    <main>
+        <!-- Savings Form -->
+        <section id="savings-form-section">
+            <h2>Manage Your Savings</h2>
+            <form id="savings-form">
+                <div>
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type" name="transaction-type" required>
+                        <option value="deposit">Deposit</option>
+                        <option value="withdrawal">Withdrawal</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="transaction-amount">Amount ($):</label>
+                    <input type="number" id="transaction-amount" name="transaction-amount" required>
+                </div>
+                <button type="submit">Submit Transaction</button>
+            </form>
+        </section>
+
+        <!-- Savings Summary -->
+        <section id="savings-summary-section">
+            <h2>Your Savings Summary</h2>
+            <div id="savings-summary">
+                <p>Current Balance: $0.00</p>
+                <ul id="transaction-history">
+                    <li>No transactions yet. Start by adding a deposit or withdrawal above.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Savings Chart -->
+        <section id="savings-chart-section">
+            <h2>Savings Growth Over Time</h2>
+            <canvas id="savings-chart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Banking Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

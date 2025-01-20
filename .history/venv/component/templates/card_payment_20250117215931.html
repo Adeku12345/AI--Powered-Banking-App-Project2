@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment - Banking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="card_payment.html">Card Payment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-section">
+            <h1>Card Payment</h1>
+            <p>Use this secure form to process your card payments.</p>
+
+            <form action="/process_payment" method="POST">
+                <div class="form-group">
+                    <label for="cardholder_name">Cardholder Name</label>
+                    <input type="text" id="cardholder_name" name="cardholder_name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card_number">Card Number</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required pattern="\d{16}">
+                </div>
+
+                <div class="form-group">
+                    <label for="expiry_date">Expiry Date</label>
+                    <input type="month" id="expiry_date" name="expiry_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" name="cvv" placeholder="123" required pattern="\d{3}">
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="1">
+                </div>
+
+                <button type="submit">Make Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Banking Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
